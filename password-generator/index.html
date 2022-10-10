@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link href="style.css" rel="stylesheet"/>
+    <script defer src="https://kit.fontawesome.com/a34c3309be.js" crossorigin="anonymous"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="password-container">
+        <div class="password">Random password</div>
+        <div class="reload"><i class="fa-solid fa-rotate-left"></i></div>
+    </div>
+
+    <div class="pass-length-container">
+        <p>Password length:</p>
+        <output class="number-length">11</output>
+        <input class="range" type="range" value="11" min="0" max="20"  oninput="this.previousElementSibling.value = this.value">
+    
+</div>
+
+    <div class="character-container">
+        <p>Character used:</p>
+        <div><input class="ABC" type="checkbox">ABC</div>
+        <div><input class="abc" type="checkbox">abc</div>
+        <div><input class="num" type="checkbox">123</div>
+        <div><input class="spe" type="checkbox">!@#</div>
+    </div>
+
+    <button class="btn">Create Password</button>
+</body>
+</html>

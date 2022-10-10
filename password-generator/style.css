@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif;
+}
+html,body{
+    height: 100%;
+}
+p{
+    font-size: 16px;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, rgb(128, 62, 0), rgb(217, 255, 0));
+}
+.password-container{
+    width: 400px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.reload{
+    cursor: pointer;
+}
+.pass-length-container{
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.number-length{
+    margin-right: auto;
+    margin-left: 15px;
+    font-weight: bold;
+}
+.character-container{
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.btn{
+    width: 300px;
+    padding: 10px;
+    /* border: 1px solid rgb(185, 185, 185); */
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(to left, rgb(128, 62, 0) 50%, rgb(217, 255, 0) 50%) right;
+    background-size: 200% 100%;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+    box-shadow: 0px 0px 8px 1px black;
+    transition:all 1s ease;
+
+}
+.btn:hover{
+    background-position: left;
+    color: black;
+    font-weight: bold;
+
+}
+
+
